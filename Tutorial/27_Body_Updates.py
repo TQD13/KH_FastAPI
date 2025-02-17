@@ -37,7 +37,7 @@ async def update_item_1(item_id: str, item: Item):
 
 # --------------------------------------------------------------------------------------------------------------
 # Partial updates with PATCH
-@app.patch("/items_2/{item_id}", response_model=Item)
+@app.patch("/items_3/{item_id}", response_model=Item)
 async def update_item_2(item_id: str, item: Item):
     stored_item_data = items[item_id]
     stored_item_model = Item(**stored_item_data)
