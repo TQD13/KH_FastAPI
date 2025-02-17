@@ -19,7 +19,7 @@ def query_or_cookie_extractor(
     return q
 
 
-@app.get("/items/")
+@app.get("/items_1/")
 async def read_query(
     query_or_default: Annotated[
         str, Depends(query_or_cookie_extractor)  # Use the dependency
